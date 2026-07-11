@@ -1,6 +1,10 @@
 
 # eu_public_consultations
 
+This repository was created in September 2023 as a final project for the Natural Language Processing course for Cognitive Science Master's degree at the University of Warsaw.
+
+## Introduction
+
 Public consultation is a process in which the public's input on matters affecting them is sought. Its main objectives are in improving the efficiency, transparency and public involvement in large-scale projects or laws and policies. Research on public consultation is well-established field of political science, however, utilisation of computational analysis have been limited to analysing quantitative data from closed-choice questionares. Currently existing corpora containing public consultation responses currently focus on a single topic. Development of multi-thematic, metadata-rich public consultation corpus would enable and facilitate utilisation of NLP techniques in research on public consultation.
 
 ## Data source
@@ -14,10 +18,16 @@ The following dataset was scrapped through undocumented API of the platform. It 
 
 This repository consists of the following files:
 
-- initiatives.csv, summaries.csv, feedbacks.csv - Datasets originating from 'Have Your Say' platform (see data structures below)
-- pubcons_analysis_ready.ipynb - Jupyter notebook with notebook z opisem projektu, danych, analizami
-  pubcons_scrapper.ipynb - Jupyter notebook with the scrapper z kodem do zebrania danych z konsultacji publicznych poprzez API
-  vis.html - wizualizacja utworzona w notebooku z analizą danych
+- i**nitiatives.csv, summaries.csv, feedbacks.csv** - Datasets originating from 'Have Your Say' platform (see data structures below). These datasets were created with the scrapper included in this repository;
+- **pubcons_analysis_ready.ipynb** - Jupyter notebook with: data preparation, cleansing and analysis;
+- **pubcons_scrapper.ipynb** - Jupyter notebook with the scrapper used to create repository through undocumented API;
+- **vis.html** - Visualization of characteristic terms by user type (citizen vs company) created in pubcons_analysis_ready.ipynb file with the use of the scattertext repository.
+
+## Reproduction
+
+To execute Jupyter notebooks from this repository use Poetry to install all necessary packages:
+
+`poetry install`
 
 ## Datasets' details
 
